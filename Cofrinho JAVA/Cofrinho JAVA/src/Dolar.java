@@ -18,7 +18,7 @@ public class Dolar extends Moeda{
 	}
 	@Override
 	public String toString() {
-		return "Dolar [valorMoeda=" + valorMoeda + ", valor=" + valor + ", converter()=" + converter() + "]";
+		return "Dolar [valor unitário da Moeda=" + valorMoeda + ", valor adicionado=" + valor + ", converter()=" + converter() + "]";
 	}
 	@Override
 	public int hashCode() {

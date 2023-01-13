@@ -40,6 +40,6 @@ public class Real extends Moeda {
 
 	@Override
 	public String toString() {
-		return "Real [valorMoeda=" + valorMoeda + ", valor=" + valor + ", converter()=" + converter() + "]";
+		return "Real [valor unitário da Moeda=" + valorMoeda + ", valor adicionado=" + valor + ", converter()=" + converter() + "]";
 	}
 }

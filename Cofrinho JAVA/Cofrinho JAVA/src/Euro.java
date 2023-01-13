@@ -16,7 +16,7 @@ public class Euro extends Moeda{
 	}
 	@Override
 	public String toString() {
-		return "Euro [valorMoeda=" + valorMoeda + ", valor=" + valor + ", converter()=" + converter() + "]";
+		return "Euro [valor unitário da Moeda=" + valorMoeda + ", valor adicionado=" + valor + ", converter()=" + converter() + "]";
 	}
 	@Override
 	public int hashCode() {
