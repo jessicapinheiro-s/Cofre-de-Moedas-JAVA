@@ -38,7 +38,6 @@ public class Principal {
 					tipoMoeda = teclado.nextInt();
 					if (tipoMoeda < 0 || tipoMoeda > 3) {
 						System.out.println("Selecione uma opcao presente no menu");
-						System.out.println("Selecione a moeda a ser adicionada");
 						System.out.println("1-Real");
 						System.out.println("2-Dolar");
 						System.out.println("3-Euro");
@@ -65,30 +64,35 @@ public class Principal {
 					cofrinho.adicionar(moeda);
 					break;
 				case 2:
+					System.out.println("Selecione a moeda a ser removida");
+					System.out.println("1-Real");
+					System.out.println("2-Dolar");
+					System.out.println("3-Euro");
+
+					tipoMoeda = teclado.nextInt();
 					if (tipoMoeda < 0 || tipoMoeda > 3) {
 						System.out.println("Selecione uma opcao presente no menu");
-						System.out.println("Selecione a moeda a ser adicionada");
 						System.out.println("1-Real");
 						System.out.println("2-Dolar");
 						System.out.println("3-Euro");
 
 						tipoMoeda = teclado.nextInt();
-					}else{
+					} else {
 						System.out.println("Digite o valor que você quer remover?");
 						// verifica qual é o tipo da moeda a ser excluida
 						if (tipoMoeda == 1) {
 							valorMoedaRremovida = teclado.nextDouble();
 							moeda = new Real(valorMoedaRremovida);
-							
+
 						} else if (tipoMoeda == 2) {
 							valorMoedaDremovida = teclado.nextDouble();
 							moeda = new Dolar(valorMoedaDremovida);
-	
+
 						} else {
 							valorMoedaEremovida = teclado.nextDouble();
 							moeda = new Euro(valorMoedaEremovida);
 						}
-	
+
 						cofrinho.remover(moeda);
 						break;
 					}
